@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valor Da Hora</title>
+    <style>
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 5em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Escreva um programa que retorne o valor hora de um funcionário com base no salário mensal e horas trabalhas por mês. -->
+
+    <!-- pegar o salário
+    pegar as horas trablhadas
+    dividir o salario pelas horas
+    mostrar o resultado
+    -->
+    <script>
+        var salario = Number(window.prompt('Digite seu salário:'))
+        var horas = Number(window.prompt('Digite o número de horas trabalhadas: '))
+        
+        var valorHora = salario / horas
+        window.alert('O valor da sua hora de trabalho será impresso na página a seguir:')
+
+        document.write(`Sua Hora trabalhada equivale a: ${valorHora.toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})}`)
+    </script>
+</body>
+</html>
+
+
+<!-- 
+    Aparentemente não posso usar 
+.toLocaleString('pt-br' , {style: 'currency', currency: 'BRL'}) Mostra valor em Real
+junto com
+.toFixed(n) Mostra o valor com 2 casas décimais
+ -->
+
