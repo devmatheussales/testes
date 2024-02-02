@@ -18,12 +18,12 @@
     <header>
         <h1>Testando a Fonte</h1>
         <!-- 
+            icone de id: <span class="material-symbols-outlined">badge</span>
+            icone smartphone:<span class="material-symbols-outlined">smartphone</span>
+            icone qrcore: <span class="material-symbols-outlined">qr_code</span>
+            icone certificado: <span class="material-symbols-outlined">sd_card</span>
             icone nuvem: <span class="material-symbols-outlined">cloud</span>
             icone interrogação: <span class="material-symbols-outlined">help</span>
-            icone certificado: <span class="material-symbols-outlined">sd_card</span>
-            icone qrcore: <span class="material-symbols-outlined">qr_code</span>
-            icone smartphone:<span class="material-symbols-outlined">smartphone</span>
-            icone de id: <span class="material-symbols-outlined">badge</span>
          -->
     </header>
     <aside>
@@ -32,8 +32,24 @@
     <main>
         <h2>Identifique-se no gov.br com:</h2>
         <!-- aqui vai um 'botao' que faz aparecer a caixa de texto -->
-        <button><span class="material-symbols-outlined">badge</span>Número do CPF</button>
+        <button><span class="material-symbols-outlined icone">badge</span>Número do CPF</button>
         <p>Digite seu CPF para <strong>criar</strong> ou <strong> acessar</strong> sua conta gov.br</p>
+        <p>CPF</p>
+        <input type="number" name="cpf" id="icpf" placeholder="Digite seu CPF" required>
+        <input type="submit" value="Continuar" class="btn">
+
+        <p><a href="#" id="login-banco"><span class="material-symbols-outlined" id="icone-smartphone">smartphone</span>Login com seu banco <span>sua conta será prata</span></em></a></p>
+
+        <p><a href="#"><span class="material-symbols-outlined icone">qr_code</span>Login com QR code</a></p>
+
+        <p><a href="#"><span class="material-symbols-outlined icone">cloud</span>Seu certificado digital</a></p>
+        
+
+        <p id="rodape">
+            <a href="#"><span class="material-symbols-outlined icone" >help</span>Está com dúvidas e precisa de ajuda?</a>
+            <br>
+            <a href="#">Termo de Uso e Viso de Privacidade</a>
+        </p>
     </main>
 </body>
 </html>

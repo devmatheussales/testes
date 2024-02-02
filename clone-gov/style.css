@@ -21,12 +21,16 @@ verde do login com banco: #008C32
     --azul: #1351B4;
     --verde: #008C32;
     --FonteBank:'Raleway', sans-serif;
-    --FonteGeral: 'Arial';
     /* --fonteGeral:rawline  */
 }
 
 * {
     font-family: var(--FonteBank);
+}
+
+span {
+    background-color: white;
+    columns: var(--azul);
 }
 
 aside {
@@ -40,4 +44,48 @@ main {
 button {
     background-color: white;
     border: none;
+}
+
+input.btn {
+    display: block;
+    background-color: var(--azul);
+    color: white;
+    border-radius: 45px;
+    width: 300px;
+    height: 40px;
+    border: none;
+    box-shadow: 1px 1px 3px black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span.icone {
+    background-color:white;
+    color: var(--azul);
+}
+
+a {
+    text-decoration: none;
+}
+
+a#login-banco {
+background-color: white;
+color: var(--verde);
+}
+a#login-banco > span {
+    background-color: var(--verde);
+    color: white;
+    font-size: 0.8em;
+    padding: 3px;
+}
+a#login-banco > span#icone-smartphone {
+    background-color: white;
+    color: var(--verde);
+}
+
+
+
+p#rodape > a {
+    display: block;
+    background-color: white;
+    color: var(--azul);
 }
