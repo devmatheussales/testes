@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Sriracha&display=swap');
+
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Sriracha', cursive; */
+/* 
+
+azul do botão continuar e dos icones : #1351B4
+verde do login com banco: #008C32
+
+
+ 'outras opções de identificação fonte: raleway
+ botao continuar: arial
+ restante do site:rawline
+
+
+ a imagem aparece a partir de 800px de width
+*/
+
+:root {
+    --azul: #1351B4;
+    --verde: #008C32;
+    --FonteBank:'Raleway', sans-serif;
+    --FonteGeral: 'Arial';
+    /* --fonteGeral:rawline  */
+}
+
+* {
+    font-family: var(--FonteBank);
+}
+
+aside {
+    display: none;
+}
+
+main {
+
+}
+
+button {
+    background-color: white;
+    border: none;
+}
