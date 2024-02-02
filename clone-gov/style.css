@@ -80,6 +80,7 @@ a#login-banco > span {
 a#login-banco > span#icone-smartphone {
     background-color: white;
     color: var(--verde);
+    text-decoration: none;
 }
 
 
