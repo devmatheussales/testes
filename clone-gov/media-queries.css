@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@media screen and  (min-width: 855px) {
+    main {
+        display: inline-block;
+        max-width: 340px;
+        background-color: white;
+        
+    }
+
+    aside {
+        display: inline-block;
+
+    }
+    aside > img {
+        width: 479px;
+        height: 345px;
+    }
+}

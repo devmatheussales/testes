@@ -6,7 +6,11 @@
     <title>gov.br Acesse sua conta</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
 
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!-- icone orelha -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!-- icone darkmode -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /><!-- icone nuvem --> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><!-- icone interrogação -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!-- icone certificado digital -->
@@ -16,8 +20,16 @@
 </head>
 <body>
     <header>
-        <h1>Testando a Fonte</h1>
+        <img src="images/logo-govbr.png" alt="logo-govbr.png">
+        
+            <span class="material-symbols-outlined icone">contrast</span>
+            
+            <span class="material-symbols-outlined icone">hearing</span>
+        
         <!-- 
+
+            icone de darkmode: <span class="material-symbols-outlined">contrast</span>
+            icone orelha: <span class="material-symbols-outlined">hearing</span>
             icone de id: <span class="material-symbols-outlined">badge</span>
             icone smartphone:<span class="material-symbols-outlined">smartphone</span>
             icone qrcore: <span class="material-symbols-outlined">qr_code</span>
@@ -28,15 +40,22 @@
     </header>
     <aside>
         <img src="images/gov-login.jpg" alt="gov-login.jpg">
+
     </aside>
     <main>
         <h2>Identifique-se no gov.br com:</h2>
         <!-- aqui vai um 'botao' que faz aparecer a caixa de texto -->
-        <button><span class="material-symbols-outlined icone">badge</span>Número do CPF</button>
+        <button onclick="clicar" ><span class="material-symbols-outlined icone">badge</span>Número do CPF</button>
         <p>Digite seu CPF para <strong>criar</strong> ou <strong> acessar</strong> sua conta gov.br</p>
-        <p>CPF</p>
-        <input type="number" name="cpf" id="icpf" placeholder="Digite seu CPF" required>
-        <input type="submit" value="Continuar" class="btn">
+        <label for="icpf">CPF</label>
+        <form action="dados.js" method="post">
+            <input type="number" name="cpf" id="icpf" placeholder="Digite seu CPF" minlength="11"  required>
+            
+            <input type="submit" value="Continuar" class="btn">
+        </form>
+        <p>Outras opções de identificação: </p>
+
+        <hr>
 
         <p><a href="#" id="login-banco"><span class="material-symbols-outlined" id="icone-smartphone">smartphone</span>Login com seu banco <span>sua conta será prata</span></em></a></p>
 
@@ -51,5 +70,13 @@
             <a href="#">Termo de Uso e Viso de Privacidade</a>
         </p>
     </main>
+    
+
+    <script>
+        function clicar() {
+
+        }
+
+    </script>
 </body>
 </html>

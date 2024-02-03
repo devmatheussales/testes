@@ -26,6 +26,13 @@ verde do login com banco: #008C32
 
 * {
     font-family: var(--FonteBank);
+    /* padding: 0px;
+    margin: 0px; */
+    line-height: 1.5em;
+}
+
+ body {
+    margin: 0px;
 }
 
 span {
@@ -33,17 +40,57 @@ span {
     columns: var(--azul);
 }
 
+header {
+    display: block;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.479);
+    height: 60px;
+    margin: 0px;
+    width: 100%;
+
+}
+
+header > img {
+    height: 70%;
+}
+
+/* header > span {
+    mover os icones pra direita    
+    
+} */
+
 aside {
     display: none;
+}
+aside > img {
+    margin: 5px;   
+    width: 600px;
+    height: 430px;
 }
 
 main {
     font-size: 1em;
+    padding: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.404);
+    margin-top: 20px;
+    margin: auto;
+    height: 600px;
+    max-width: 340px ;
+    
 }
 
 button {
     background-color: white;
     border: none;
+    margin: 10px;
+}
+
+input#cpf {
+    margin: 10px;
+}
+
+hr {
+    margin: 5px;
+    width: 100%;
 }
 
 input.btn {
@@ -51,19 +98,22 @@ input.btn {
     background-color: var(--azul);
     color: white;
     border-radius: 45px;
-    width: 300px;
+    width: 90%;
     height: 40px;
     border: none;
     box-shadow: 1px 1px 3px black;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
 }
 
 span.icone {
     background-color:white;
     color: var(--azul);
+    font-size: 1.5em;
 }
 
 a {
+    font-size: 0.8em;
     text-decoration: none;
 }
 
