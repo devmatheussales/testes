@@ -45,17 +45,18 @@
     <main>
         <h2>Identifique-se no gov.br com:</h2>
         <!-- aqui vai um 'botao' que faz aparecer a caixa de texto -->
-        <button onclick="clicar" ><span class="material-symbols-outlined icone">badge</span>Número do CPF</button>
-        <p>Digite seu CPF para <strong>criar</strong> ou <strong> acessar</strong> sua conta gov.br</p>
-        <label for="icpf">CPF</label>
-        <form action="dados.js" method="post">
-            <input type="number" name="cpf" id="icpf" placeholder="Digite seu CPF" minlength="11"  required>
+        <button  id="exibir" onclick="clicar" ><span class="material-symbols-outlined icone">badge</span>Número do CPF</button>
+        <article id="artigo">
+            <p>Digite seu CPF para <strong>criar</strong> ou <strong> acessar</strong> sua conta gov.br</p>
+            <label for="icpf">CPF</label>
+            <form action="dados.js" method="post">
+                <input type="number" name="cpf" id="icpf" placeholder="Digite seu CPF" minlength="11"  required>
             
-            <input type="submit" value="Continuar" class="btn">
-        </form>
-        <p>Outras opções de identificação: </p>
-
-        <hr>
+                <input type="submit" value="Continuar" class="btn">
+            </form>
+            <p>Outras opções de identificação: </p>
+            <hr>
+        </article>
 
         <p><a href="#" id="login-banco"><span class="material-symbols-outlined" id="icone-smartphone">smartphone</span>Login com seu banco <span>sua conta será prata</span></em></a></p>
 
@@ -72,11 +73,6 @@
     </main>
     
 
-    <script>
-        function clicar() {
 
-        }
-
-    </script>
 </body>
 </html>

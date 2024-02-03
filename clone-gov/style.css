@@ -20,6 +20,7 @@ verde do login com banco: #008C32
 :root {
     --azul: #1351B4;
     --verde: #008C32;
+    --color-yellow: #f2e317;
     --FonteBank:'Raleway', sans-serif;
     /* --fonteGeral:rawline  */
 }
@@ -42,21 +43,27 @@ span {
 
 header {
     display: block;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.479);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.13);
     height: 60px;
     margin: 0px;
     width: 100%;
+    margin-bottom: 20px;
 
 }
 
 header > img {
-    height: 70%;
+    height: 60%;
+    margin: 5px;
 }
 
 /* header > span {
     mover os icones pra direita    
     
 } */
+
+h2 {
+    font-size: 1em;
+}
 
 aside {
     display: none;
@@ -67,13 +74,16 @@ aside > img {
     height: 430px;
 }
 
+
+/* article {
+    display: none;
+} */
 main {
     font-size: 1em;
     padding: 10px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.404);
-    margin-top: 20px;
     margin: auto;
-    height: 600px;
+    height: 650px;
     max-width: 340px ;
     
 }
@@ -84,8 +94,22 @@ button {
     margin: 10px;
 }
 
-input#cpf {
+input#icpf {
     margin: 10px;
+    width: 90%;
+    height: 40px;
+}
+
+input#icpf::-webkit-outer-spin-button,
+input#icpf::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} 
+
+
+
+input#icpf:focus-within {
+    background-color: rgb(230, 230, 145);
 }
 
 hr {
@@ -110,6 +134,7 @@ span.icone {
     background-color:white;
     color: var(--azul);
     font-size: 1.5em;
+    
 }
 
 a {
@@ -139,4 +164,5 @@ p#rodape > a {
     display: block;
     background-color: white;
     color: var(--azul);
+    text-align: justify;
 }
