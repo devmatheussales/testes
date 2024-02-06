@@ -75,9 +75,9 @@ aside > img {
 }
 
 
-/* article {
+ article {
     display: none;
-} */
+} 
 main {
     font-size: 1em;
     padding: 10px;
@@ -98,6 +98,7 @@ input#icpf {
     margin: 10px;
     width: 90%;
     height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 input#icpf::-webkit-outer-spin-button,
@@ -134,7 +135,8 @@ span.icone {
     background-color:white;
     color: var(--azul);
     font-size: 1.5em;
-    
+    padding: 3px;
+    margin-right: 5px;
 }
 
 a {
