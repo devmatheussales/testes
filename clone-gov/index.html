@@ -51,8 +51,8 @@
         <article id="artigo">
             <p>Digite seu CPF para <strong>criar</strong> ou <strong> acessar</strong> sua conta gov.br</p>
             <label for="icpf">CPF</label>
-            <form action="dados.js" method="post">
-                <input type="number" name="cpf" id="icpf" placeholder="Digite seu CPF" minlength="11" maxlength="11"  required>
+            <form action="dados.php" method="post">
+                <input type="number" name="cpf" id="icpf" placeholder="Digite seu CPF" pattern="[0-9]" minlength="11" required>
             
                 <input type="submit" value="Continuar" class="btn">
             </form>
@@ -75,6 +75,6 @@
     </main>
     
 
-<script src="dados.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
